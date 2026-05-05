@@ -19,3 +19,14 @@ class CreateTodo:
         todo = Todo(title, description)
         self.repo.save(todo)
         return todo
+
+
+class ToggleTodo:
+    def __init__(self, repo: TodoRepository):
+        self.repo = repo
+
+
+    def execute(self, todo_id):
+        todo = self.repo.get(todo_id)
+
+

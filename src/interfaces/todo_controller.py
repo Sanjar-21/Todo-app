@@ -4,11 +4,6 @@ class TodoRepository(ABC):
     
     @abstractmethod
     def save(self, todo):
-        """AI is creating summary for save
-
-        Args:
-            todo ([type]): [description]
-        """
         pass
 
     @abstractmethod
